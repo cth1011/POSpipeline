@@ -1,2 +1,4 @@
 # POSpipeline
 This is data pipeline code for the POS generated data within a pizza restaurant.
+
+The pizza restaurant has over 150 stores, and each generates an excel file that may or may not follow the standard template of the company. In order to resolve it, the POS datapipeline was created. The program identifies first the total number of transactions within the first column as the scope of focus. This is to prevent any formulas below the Sales Amount from affecting the pipeline. Moreover, not all of the columns are arranged as defined in the template. In fact, there are added columns that were not defined in the template. Hence, the program first search the column name before transferring the data into one sheet. The process is repeated for all excel data sheets that are found within the same folder.
